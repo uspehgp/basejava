@@ -9,6 +9,10 @@ import ru.javawebinar.basejava.model.Resume;
 public abstract class AbstractArrayStorageTest {
     private Storage storage;
 
+    public AbstractArrayStorageTest(Storage storage) {
+        this.storage = storage;
+    }
+
     private static final String UUID_1 = "uuid1";
     private static final String UUID_2 = "uuid2";
     private static final String UUID_3 = "uuid3";
